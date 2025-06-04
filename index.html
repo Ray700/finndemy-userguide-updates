@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Finndemy User Guides - Home</title>
+  <style>
+    :root {
+      --regal-blue: #0F3758;
+      --bright-green: #1EBA15;
+      --gray-light: #f4f6f8;
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-family);
+      background-color: white;
+      color: var(--regal-blue);
+      text-align: center;
+    }
+    header {
+      background-color: var(--regal-blue);
+      color: white;
+      padding: 2rem 1rem;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    main {
+      max-width: 600px;
+      margin: 3rem auto;
+    }
+    h1 {
+      margin-bottom: 2rem;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .link-btn {
+      display: block;
+      background-color: var(--bright-green);
+      color: white;
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: 1rem 0;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(30, 186, 21, 0.4);
+      transition: background-color 0.3s ease;
+    }
+    .link-btn:hover,
+    .link-btn:focus {
+      background-color: #158a12;
+    }
+    footer {
+      margin-top: 6rem;
+      font-size: 1rem;
+      color: var(--regal-blue);
+      padding: 1rem;
+    }
+    @media (max-width: 500px) {
+      main {
+        margin: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Welcome to the Finndemy User Guides</header>
+
+  <main>
+    <h1>Select Your User Guide</h1>
+    <nav class="links" role="navigation" aria-label="User guide navigation links">
+      <a href="userlogin.html" class="link-btn">User Guide (Learners)</a>
+      <a href="trainerguide.html" class="link-btn">Trainer Guide</a>
+      <a href="organizationguide.html" class="link-btn">Organization Guide</a>
+    </nav>
+  </main>
+
+  <footer>
+    Finndemy &copy; 2025 &mdash; Empowering Your Learning Journey |
+    <a href="mailto:info@finndemy.com">info@finndemy.com</a>
+  </footer>
+</body>
+</html>
